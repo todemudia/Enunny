@@ -5,4 +5,5 @@ package com.example.triumph.enunny.ui.base;
  */
 
 public interface DialogMvpView extends BaseView {
+
 }

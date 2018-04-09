@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Enunny</string>
+    <string name="content_logo_description">Enunny Logo</string>
+    <string name="play_button_main_menu">Play</string>
+    <string name="settings_button_main_menu">Settings</string>
+    <string name="story_button_main_menu">Story</string>
+    <string name="lullaby_button_main_menu">Lullaby</string>
 </resources>
