@@ -5,4 +5,6 @@
     <string name="settings_button_main_menu">Settings</string>
     <string name="story_button_main_menu">Story</string>
     <string name="lullaby_button_main_menu">Lullaby</string>
+    <string name="question_mark">\?</string>
+
 </resources>
