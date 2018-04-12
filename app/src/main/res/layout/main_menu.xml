@@ -9,7 +9,6 @@
         android:id="@+id/logo_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleType="center"
         android:src="@drawable/enunny_logo"
         app:layout_constraintBottom_toTopOf="@+id/play_button_main_menu"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +25,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo_image" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_image"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/buttontextcollor" />
 
     <Button
         android:id="@+id/story_button_main_menu"
@@ -37,7 +38,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/play_button_main_menu" />
+        app:layout_constraintTop_toBottomOf="@+id/play_button_main_menu"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/buttontextcollor"
+        />
 
     <Button
         android:id="@+id/lullaby_button_main_menu"
@@ -48,7 +52,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/story_button_main_menu" />
+        app:layout_constraintTop_toBottomOf="@+id/story_button_main_menu"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/buttontextcollor"
+        />
 
 
     <Button
@@ -62,7 +69,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:textColor="@color/buttontextcollor"
-        android:background="@drawable/rounded_button"/>
+        android:background="@drawable/rounded_button" />
 
     <Button
         android:id="@+id/help_button_main_menu"

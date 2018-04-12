@@ -30,6 +30,12 @@ dependencies {
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
+    //Retrofit & RxJava
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.12'
+
+
+
     //Dependency injector
     implementation 'com.google.dagger:dagger:2.8'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.8'
