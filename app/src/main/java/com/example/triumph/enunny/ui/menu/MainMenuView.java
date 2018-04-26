@@ -7,20 +7,15 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.triumph.enunny.MvpApp;
 import com.example.triumph.enunny.R;
-import com.example.triumph.enunny.data.DataManager;
 import com.example.triumph.enunny.ui.base.BaseActivity;
-import com.example.triumph.enunny.ui.base.BaseView;
 import com.example.triumph.enunny.ui.play.PlayView;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
+import javax.inject.Inject;
 
 public class MainMenuView extends BaseActivity implements MainMenuMvpView{
-
-    MainMenuPresenter mMainMenuPresenter;
+    @Inject
+    MainMenuMvpPresenter<MainMenuMvpView> mPresenter;
 
     // Find the View that shows the next button Address Activity
     Button mPlayButton;
@@ -29,11 +24,8 @@ public class MainMenuView extends BaseActivity implements MainMenuMvpView{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu);
-
-        DataManager dataManager = ((MvpApp) getApplication()).getDataManager();
-        mMainMenuPresenter = new MainMenuPresenter(dataManager);
-        mMainMenuPresenter.onAttach(this);
-
+        getActivityComponent().inject(this);
+        mPresenter.onAttach(this);
         openPlayMode();
     }
 

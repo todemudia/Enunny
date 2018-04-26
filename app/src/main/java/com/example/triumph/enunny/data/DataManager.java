@@ -1,32 +1,14 @@
 package com.example.triumph.enunny.data;
 
-import com.example.triumph.enunny.data.preferences.SharedPreferencesHelper;
+import com.example.triumph.enunny.data.db.DatabaseHelper;
+import com.example.triumph.enunny.data.preferences.PreferenceHelper;
 
-public class DataManager {
+import io.reactivex.Observable;
 
-    SharedPreferencesHelper mSharedPreferencesHelper;
+public interface DataManager extends DatabaseHelper, PreferenceHelper {
 
-    public DataManager(SharedPreferencesHelper sharedPreferencesHelper) {
-        mSharedPreferencesHelper = sharedPreferencesHelper;
-    }
 
-    public void clear() {
-        mSharedPreferencesHelper.clear();
-    }
+    Observable<Boolean> seedDatabaseAnimals();
 
-    public void saveEmailId(String email) {
-        mSharedPreferencesHelper.putEmail(email);
-    }
 
-    public String getEmailId() {
-        return mSharedPreferencesHelper.getEmail();
-    }
-
-    public void setLoggedIn() {
-        mSharedPreferencesHelper.setLoggedInMode(true);
-    }
-
-    public Boolean getLoggedInMode() {
-        return mSharedPreferencesHelper.getLoggedInMode();
-    }
 }

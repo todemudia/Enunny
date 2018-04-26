@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Dog",
+    "imgUrl": "http://www.trimudia.com/images/dog.jpg",
+    "soundUrl": "http://www.trimudia.com/sound/dog_bark.mp3",
+    "makesSound": "woof"
+  },
+  {
+    "name": "Cat",
+    "imgUrl": "http://trimudia.com/images/kitten.jpg",
+    "soundUrl": "http://trimudia.com/sound/kitty_meow.mp3",
+    "makesSound": "Meow"
+  },
+  {
+    "name": "Lion",
+    "imgUrl": "http://trimudia.com/images/lion.jpg",
+    "soundUrl": "http://www.trimudia.com/sound/dog_bark.mp3",
+    "makesSound": "Roar"
+  },
+  {
+    "name": "Tiger",
+    "imgUrl": "http://trimudia.com/images/tiger.jpg",
+    "soundUrl": "http://www.trimudia.com/sound/dog_bark.mp3",
+    "makesSound": "Roar"
+  },
+  {
+    "name": "Chicken",
+    "imgUrl": "http://trimudia.com/images/chicken.jpg",
+    "soundUrl": "http://www.trimudia.com/sound/dog_bark.mp3",
+    "makesSound": "Cluck"
+  },
+  {
+    "name": "Pig",
+    "imgUrl": "http://trimudia.com/images/pig.jpg",
+    "soundUrl": "http://www.trimudia.com/sound/dog_bark.mp3",
+    "makesSound": "Oink"
+  },
+  {
+    "name": "Monkey",
+    "imgUrl": "http://trimudia.com/images/monkey.jpg",
+    "soundUrl": "http://www.trimudia.com/sound/dog_bark.mp3",
+    "makesSound": "Uh uh ah ah"
+  },
+  {
+    "name": "Elephant",
+    "imgUrl": "http://trimudia.com/images/elephant.jpg",
+    "soundUrl": "http://www.trimudia.com/sound/dog_bark.mp3",
+    "makesSound": "Trumpet"
+  },
+  {
+    "name": "Horse",
+    "imgUrl": "http://trimudia.com/images/horse.jpg",
+    "soundUrl": "http://www.trimudia.com/sound/dog_bark.mp3",
+    "makesSound": "Neigh"
+  },
+  {
+    "name": "Donkey",
+    "imgUrl": "http://trimudia.com/images/donkey.jpg",
+    "soundUrl": "http://www.trimudia.com/sound/dog_bark.mp3",
+    "makesSound": "He-Haw"
+  },
+  {
+    "name": "Goat",
+    "imgUrl": "http://trimudia.com/images/goat.jpg",
+    "soundUrl": "http://www.trimudia.com/sound/dog_bark.mp3",
+    "makesSound": "Bleet"
+  },
+
+  {
+    "name": "Cow",
+    "imgUrl": "http://trimudia.com/images/cow.jpg",
+    "soundUrl": "http://www.trimudia.com/sound/dog_bark.mp3",
+    "makesSound": "Moo"
+  },
+  {
+    "name": "Dolphin",
+    "imgUrl": "http://trimudia.com/images/dolphin.jpg",
+    "soundUrl": "http://www.trimudia.com/sound/dog_bark.mp3",
+    "makesSound": "Bubbles"
+  }
+
+]

@@ -1,27 +1,39 @@
 package com.example.triumph.enunny;
 
 import android.app.Application;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.content.Context;
 
+import com.example.triumph.enunny.data.AppDataManager;
 import com.example.triumph.enunny.data.DataManager;
-import com.example.triumph.enunny.data.preferences.SharedPreferencesHelper;
+import com.example.triumph.enunny.di.components.DaggerApplicationComponent;
+import com.example.triumph.enunny.di.modules.ApplicationModule;
+import com.example.triumph.enunny.di.components.ApplicationComponent;
+
+import javax.inject.Inject;
 
 public class MvpApp extends Application {
+    protected ApplicationComponent applicationComponent;
 
+    @Inject
     DataManager dataManager;
+
+    public static MvpApp get(Context context) {
+        return (MvpApp) context.getApplicationContext();
+    }
 
     @Override
     public void onCreate() {
         super.onCreate();
-
-        SharedPreferencesHelper sharedPreferencesHelper = new SharedPreferencesHelper(getApplicationContext());
-        dataManager = new DataManager(sharedPreferencesHelper);
-
+        applicationComponent = DaggerApplicationComponent
+                .builder()
+                .applicationModule(new ApplicationModule(this))
+                .build();
+        applicationComponent.inject(this);
     }
 
-    public DataManager getDataManager() {
-        return dataManager;
+    public ApplicationComponent getApplicationComponent(){
+        return applicationComponent;
     }
-
 }
+
+

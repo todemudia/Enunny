@@ -1,48 +1,75 @@
-package com.example.triumph.enunny.data.db.model;
 
+package com.example.triumph.enunny.data.db.model;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Property;
+import org.greenrobot.greendao.annotation.Generated;
+
+@Entity(nameInDb = "animals")
 public class Animal {
 
-    private Long id;
+    @Expose
+    @SerializedName("name")
+    @Property(nameInDb = "name")
     private String name;
-    private String createdAt;
-    private String updatedAt;
 
-    public void setId(Long id) {
-        this.id = id;
+    @Expose
+    @Property(nameInDb = "imgUrl")
+    @SerializedName("imgUrl")
+    private String imgUrl;
+
+    @Expose
+    @Property(nameInDb = "soundUrl")
+    @SerializedName("soundUrl")
+    private String soundUrl;
+
+    @Expose
+    @Property(nameInDb = "makesSound")
+    @SerializedName("makesSound")
+    private String makesSound;
+
+    @Generated(hash = 1728312985)
+    public Animal(String name, String imgUrl, String soundUrl, String makesSound) {
+        this.name = name;
+        this.imgUrl = imgUrl;
+        this.soundUrl = soundUrl;
+        this.makesSound = makesSound;
+    }
+
+    @Generated(hash = 308569294)
+    public Animal() {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getCreatedAt() {
-        return createdAt;
+    public String getImgUrl() {
+        return this.imgUrl;
     }
 
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
-    public String getUpdatedAt() {
-        return updatedAt;
+    public String getSoundUrl() {
+        return this.soundUrl;
     }
 
-    public void setUpdatedAt(String updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setSoundUrl(String soundUrl) {
+        this.soundUrl = soundUrl;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", createdAt='" + createdAt + '\'' +
-                ", updatedAt='" + updatedAt + '\'' +
-                '}';
+    public String getMakesSound() {
+        return this.makesSound;
+    }
+
+    public void setMakesSound(String makesSound) {
+        this.makesSound = makesSound;
     }
 }
-
